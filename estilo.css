@@ -1,0 +1,262 @@
+/*COMÚN A TODO EL PROYECTO*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	background-color: #DCE5FA;
+}
+
+header h1{
+	font-style: italic;
+	font-weight: bold;
+	color: #1A5E86;
+	font-size: 40px;
+	word-spacing: 10px;
+	text-align: center;
+	width: 100%;
+	height: 150px;
+	background-image: url("fotoheader2.jpg");	
+}
+
+main{
+	width:100%; 
+	height:1400px;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-color: #DCE5FA;
+}
+
+footer{
+	width: 100%
+	overflow: hidden;
+	font-size: 15px;
+	height: 20px;
+}
+
+ul {
+    margin-bottom: 10px;
+}
+
+ul li {
+   	 display: inline-block;
+}
+
+#submenu{ 
+    position:absolute;
+    display: none;
+}
+
+#submenu li {
+    display: block;
+}
+
+ul li:hover #submenu{
+    display: block;
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 320px) and (max-width: 768px){
+		body{
+			background-color: #739BF8;
+		}
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+	body{
+		background-color: #D5D7DC;
+	}
+
+}
+
+@media (min-width: 1025px){
+	body{
+		background-color: #DCE5FA;
+	}
+}
+
+
+/*INDEX*/
+
+h2{
+	color: #1A5E86
+}
+
+.parrafo{
+	font-size: 15px;
+	text-align: justify;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	word-spacing: 10px;
+	line-height: 18px;
+	margin-left: 5px;
+}
+
+.padre{
+	display: grid;
+	grid-template-columns: 300px 300px 300px 300px;
+	grid-template-rows: 150px 30px;
+	grid-template-areas: "izquierda centro1 centro2 derecha"
+						 "textoc textoa textoi textoau";
+	grid-column-gap: 15px;
+	grid-row-gap: 5px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.asidebarIzquierda{
+	grid-area: izquierda;
+	background-image: url("contabilidad2.png");
+}
+
+.centro1{
+	grid-area: centro1;
+	background-image: url("administración2.png");
+}
+
+.centro2{
+	grid-area: centro2;
+	background-image: url("impuestos2.png");
+}
+
+.asidebarDerecha{
+	grid-area: derecha;
+	background-image: url("auditoria2.png");
+}
+
+.textoc{
+	grid-area: textoc;
+	font-size: 15px;
+	color: #1A5E86;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.textoa{
+	grid-area: textoa;
+	font-size: 15px;
+	color: #1A5E86;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.textoi{
+	grid-area: textoi;
+	font-size: 15px;
+	color: #1A5E86;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.textoau{
+	grid-area: textoau;
+	font-size: 15px;
+	color: #1A5E86;
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+/*NUESTRO EQUIPO*/
+.nuestroequip{
+	display: grid;
+	grid-template-columns: 20% 70%;
+	grid-template-rows: 300px 300px;
+	grid-template-areas: "imagen1 descrip1"
+						 "imagen2 descrip2";
+	grid-column-gap: 10px;
+	grid-row-gap: 5px;
+	margin-left: 10px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.imagen1{
+	grid-area: imagen1;
+	padding-left: 50px;
+}
+
+.descrip1{
+	grid-area: descrip1;
+}
+
+.imagen2{
+	grid-area: imagen2;
+	padding-left: 50px;
+}
+
+.descrip2{
+	grid-area: descrip2;
+}
+
+div h3{
+	font-size: 20px;
+	color: #1A5E86;
+	text-align: left;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+div h4{
+	font-size: 15px;
+	color: #1A5E86;
+	text-align: left;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.descripus{
+	font-size: 15px;
+	color: #1A5E86;
+	text-align: left;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	font-style: italic;
+	margin-right: 40px;
+}
+
+/*BLOG/ACTUALIDAD*/
+
+.parrafoBlog{
+	font-size: 10px;
+	text-align: justify;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	word-spacing: 5px;
+	line-height: 18px;
+	margin-left: 10px;
+	color: #1A5E86;
+}
+
+/*SERVICIOS*/
+
+#tituloceleste{
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: 10px;
+	background-color: #DCE5FA;
+}
+
+#listaadministracion li{
+	font-size: 15px;
+	margin-left: 10px;
+}
+
+div h2{
+	color: #1A5E86;
+	font-size: 30px;
+	font-weight: bold;
+	animation-name: efectazo;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+}
+
+@keyframes efectazo {
+	0%{ font-size: 30px; }
+	50%{ font-size: 45px;
+	     color: black; }
+	100%{ font-size: 30px; }
+}
